@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarkBusiness — Sua empresa é lembrada ou esquecida?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@1,72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <svg width="26" height="22" viewBox="0 0 26 22" fill="none">
+        <path d="M2 20L7 2L13 14L19 2L24 20" stroke="#2643F0" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text">MarkBusiness</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#transformacoes">Transformações</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#metodo">Método</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-primary desktop-only" onclick="document.getElementById('contato').scrollIntoView()">Diagnóstico Gratuito</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#transformacoes">Transformações</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#metodo">Método</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">O diagnóstico</span>
+      <h1>Sua empresa é<br>lembrada ou<br><span class="accent">esquecida?</span></h1>
+      <p class="lead">Marcas fortes são escolhidas.<br>Mesmo quando não são as mais baratas.</p>
+      <button class="btn btn-primary" onclick="document.getElementById('contato').scrollIntoView()">
+        Receber diagnóstico gratuito <span class="arrow">→</span>
+      </button>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="num">+3</div>
+          <div class="label">anos transformando marcas</div>
+        </div>
+        <div class="stat">
+          <div class="num">+20</div>
+          <div class="label">projetos produzidos</div>
+        </div>
+        <div class="stat">
+          <div class="num blue">100%</div>
+          <div class="label">focados em branding</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-grid">
+      <!-- Troque cada src abaixo pela imagem real do logo (de preferência a versão BRANCA/reversa,
+           já que o fundo do quadrado é colorido). Pode usar .png, .svg ou .jpg — só ajustar a extensão aqui. -->
+      <div class="brand-card nu"><img src="images/marcas/Nubank.jpeg" alt="Logo nu" class="brand-logo"></div>
+      <div class="brand-card coca"><img src="images/marcas/Coca cola.jpeg" alt="Logo Coca-Cola" class="brand-logo"></div>
+      <div class="brand-card nike"><img src="images/marcas/Nike.jpeg" alt="Logo Nike" class="brand-logo"></div>
+      <div class="brand-card samsung"><img src="images/marcas/sansung.jpeg" alt="Logo Samsung" class="brand-logo"></div>
+      <div class="brand-card cem"><img src="images/marcas/Lojas cem.jpeg" alt="Logo Lojas CEM" class="brand-logo"></div>
+      <div class="brand-card ifood"><img src="images/marcas/Ifood.jpeg" alt="Logo ifood" class="brand-logo"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O problema</span>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card"><h3>Promoções<br>constantes</h3></div>
+      <div class="problem-card"><h3>Escolhida<br>pelo preço</h3></div>
+      <div class="problem-card"><h3>Igual aos<br>concorrentes</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="transformacoes">
+  <div class="container">
+    <div class="transform-head">
+      <div>
+        <span class="eyebrow">Transformações</span>
+        <h2>Projetos públicos.</h2>
+      </div>
+      <a href="#" class="view-all">Ver todos os cases <span class="arrow">→</span></a>
+    </div>
+
+    <div class="cases-grid">
+      <!-- Troque cada src pela capa/imagem real do case. Tamanho ideal: ~800x900px (retrato), .jpg ou .png. -->
+      <div class="case-card vela"><img src="images/cases/Vela.jpeg" alt="Case VELA" class="case-img"></div>
+      <div class="case-card azura"><img src="images/cases/Azura Cortada.jpeg" alt="Case Azura Educação" class="case-img"></div>
+      <div class="case-card nucard"><img src="images/cases/Nubank.jpeg" alt="Case nu" class="case-img"></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O impacto de uma marca forte</span>
+    </div>
+    <div class="impact-panel">
+      <!-- Troque cada src abaixo pela logo (versão colorida normal, fundo branco aqui).
+           O texto abaixo de cada logo continua em preto, fixo no código. -->
+      <div class="impact-item">
+        <img src="images/impacto/Cocacola (Impacto).jpeg" alt="Logo Coca-Cola" class="impact-logo">
+        <span class="tag">Cobra mais.</span>
+      </div>
+      <div class="impact-item">
+        <img src="images/impacto/Nike (Impacto).jpeg" alt="Logo Nike" class="impact-logo">
+        <span class="tag">É lembrada.</span>
+      </div>
+      <div class="impact-item">
+        <img src="images/impacto/Sansung (Impacto).jpeg" alt="Logo Samsung" class="impact-logo">
+        <span class="tag">É desejada.</span>
+      </div>
+      <div class="impact-item">
+        <img src="images/impacto/Nubank (Impacto).jpeg" alt="Logo nu" class="impact-logo">
+        <span class="tag">Cresce.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="container">
+    <div class="section-head" style="text-align:left;">
+      <span class="eyebrow">Nosso método</span>
+    </div>
+    <div class="method-row">
+      <div class="method-step">
+        <div class="num">01</div>
+        <div class="label">Diagnóstico</div>
+      </div>
+      <div class="method-arrow">→</div>
+      <div class="method-step">
+        <div class="num">02</div>
+        <div class="label">Estratégia</div>
+      </div>
+      <div class="method-arrow">→</div>
+      <div class="method-step">
+        <div class="num">03</div>
+        <div class="label">Construção</div>
+      </div>
+      <div class="method-arrow">→</div>
+      <div class="method-step">
+        <div class="num">04</div>
+        <div class="label">Aplicação</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="solucoes">
+  <div class="container">
+    <div class="section-head" style="text-align:left;">
+      <span class="eyebrow">Soluções</span>
+    </div>
+    <div class="solutions-grid">
+      <div class="solution-item">
+        <h3>Identidade<br>Visual</h3>
+        <div class="underline c-blue"></div>
+      </div>
+      <div class="solution-item">
+        <h3>Branding<br>Estratégico</h3>
+        <div class="underline c-pink"></div>
+      </div>
+      <div class="solution-item">
+        <h3>Rebranding</h3>
+        <div class="underline c-black"></div>
+      </div>
+      <div class="solution-item">
+        <h3>Direção<br>de Marca</h3>
+        <div class="underline c-blue"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contato">
+  <div class="container">
+    <div class="cta-panel">
+      <div class="cta-left">
+        <span class="eyebrow">Diagnóstico gratuito</span>
+        <h2>Descubra o que está<br>impedindo sua marca<br>de <span class="accent">crescer</span>.</h2>
+      </div>
+      <div class="form-card">
+        <!-- O número de WhatsApp usado aqui está configurado em script.js (WHATSAPP_NUMBER) -->
+        <form id="diagForm">
+          <div class="form-grid">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="empresa" placeholder="Empresa" required>
+            <input type="text" name="instagram" placeholder="Instagram">
+            <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Receber diagnóstico gratuito <span class="arrow">→</span></button>
+          <p id="formMsg" style="font-size:12.5px;color:var(--gray-500);text-align:center;margin-top:10px;min-height:16px;"></p>
+        </form>
+        <div class="checks">
+          <span class="check"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#2643F0" stroke-width="1.4"/><path d="M6 10l2.5 2.5L14 7" stroke="#2643F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Pontos fortes</span>
+          <span class="check"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#2643F0" stroke-width="1.4"/><path d="M6 10l2.5 2.5L14 7" stroke="#2643F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Oportunidades</span>
+          <span class="check"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#2643F0" stroke-width="1.4"/><path d="M6 10l2.5 2.5L14 7" stroke="#2643F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Recomendações</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <svg width="26" height="22" viewBox="0 0 26 22" fill="none">
+            <path d="M2 20L7 2L13 14L19 2L24 20" stroke="#2643F0" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">MarkBusiness</span>
+        </a>
+        <p>Transformamos empresas comuns em marcas mais lembradas, desejadas e valiosas.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <ul>
+          <li><span class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1.2 1.2 0 0 1 1.2-.3 11 11 0 0 0 3.4.5 1.2 1.2 0 0 1 1.2 1.2V20a1.2 1.2 0 0 1-1.2 1.2A17.2 17.2 0 0 1 3 4.2 1.2 1.2 0 0 1 4.2 3h3.4A1.2 1.2 0 0 1 8.8 4.2 11 11 0 0 0 9.3 7.6a1.2 1.2 0 0 1-.3 1.2L6.6 10.8Z"/></svg>(19) 99818-1396</span></li>
+          <li><a href="mailto:contato@markbusiness.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>contato@markbusiness.com</a></li>
+          <li><a href="https://instagram.com/markbusiness.br" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>@markbusiness.br</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-cta">
+        <button class="btn btn-outline" id="whatsappFooterBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.3-.6-2.2-1.4-2.9-2.6-.1-.2-.1-.4.1-.5.2-.2.4-.4.5-.6.1-.2.1-.4 0-.6-.1-.2-.6-1.4-.8-1.9-.1-.4-.3-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c1.2 1.6 2.6 2.8 4.5 3.5.6.2 1.1.3 1.5.2.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+          Falar no WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2026 MarkBusiness. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
