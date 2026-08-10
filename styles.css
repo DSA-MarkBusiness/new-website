@@ -115,11 +115,20 @@
     align-items:center;
     gap:9px;
   }
-  .logo-text{
-    font-weight:800;
-    font-size:14.5px;
-    letter-spacing:.04em;
-    text-transform:uppercase;
+  .brand-logo-img{
+    display:block;
+    width:auto;
+    height:40px;
+    max-width:180px;
+    object-fit:contain;
+  }
+  .header-brand-logo-img{
+    height:60px;
+    max-width:180px;
+  }
+  .footer-brand-logo-img{
+    height:60px;
+    max-width:180px;
   }
 
   .nav-links{
@@ -450,6 +459,7 @@
     .method-row{flex-wrap:wrap;gap:24px 0;}
     .method-arrow{display:none;}
     .method-step{flex:0 0 45%;}
+    .brand-logo-img{height:38px;max-width:170px;}
   }
 
   @media (max-width:600px){
@@ -463,4 +473,5 @@
     .solutions-grid{grid-template-columns:1fr;}
     .method-step{flex:0 0 100%;}
     .transform-head{flex-direction:column;align-items:flex-start;}
+    .brand-logo-img{height:38px;max-width:170px;}
   }
