@@ -7,6 +7,14 @@
     a.addEventListener('click', () => mobileNav.classList.remove('open'));
   });
 
+  const logoHeader = document.querySelector('.logo-header');
+  if (logoHeader) {
+    logoHeader.addEventListener('click', function(event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // ===== WhatsApp =====
   // Troque pelo número real da empresa, no formato 55 + DDD + número (só dígitos).
   const WHATSAPP_NUMBER = '5519998181396';
