@@ -23,10 +23,7 @@
     --container:1240px;
   }
 
-  *{margin:0;padding:0;box-sizing:border-box;
-  scrollbar-width:thin;
-  scrollbar-color:var(--blue) var(--gray-100);
-  }
+  *{margin:0;padding:0;box-sizing:border-box;}
 
   html{scroll-behavior:smooth;}
 
@@ -64,7 +61,7 @@
     align-items:center;
     gap:8px;
     font-weight:700;
-    font-size:11px;
+    font-size:13px;
     letter-spacing:.03em;
     text-transform:uppercase;
     border:none;
@@ -77,17 +74,17 @@
   .btn-primary{
     background:var(--blue);
     color:var(--white);
-    padding:11px 18px;
+    padding:14px 22px;
   }
   .btn-primary:hover{background:var(--blue-dark);}
 
-  .btn-block{width:100%;justify-content:center;padding:13px 18px;}
+  .btn-block{width:100%;justify-content:center;padding:16px 22px;}
 
   .btn-outline{
     background:transparent;
     color:var(--blue);
     border:1.5px solid var(--blue);
-    padding:11px 18px;
+    padding:13px 22px;
   }
   .btn-outline:hover{background:var(--blue);color:var(--white);}
 
@@ -126,9 +123,9 @@
   .brand-logo-img{
     display:block;
     width:auto;
-    height:clamp(24px, 2.2vw, 36px);
-    max-width:clamp(98px, 12vw, 128px);
+    height:40px;
     max-height:50px;
+    max-width:150px;
     object-fit:contain;
   }
   .header-brand-logo-img{
@@ -138,9 +135,11 @@
     max-width:150px;
     object-fit:contain;
   }
-  .footer-brand-logo-img{
-    height:clamp(24px, 2.2vw, 36px);
-    max-width:clamp(98px, 12vw, 128px);
+  .logo-text{
+    font-weight:800;
+    font-size:14.5px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
   }
 
   .nav-links{
@@ -471,9 +470,6 @@
     .method-row{flex-wrap:wrap;gap:24px 0;}
     .method-arrow{display:none;}
     .method-step{flex:0 0 45%;}
-    .brand-logo-img,
-    .footer-brand-logo-img{height:clamp(22px, 3.4vw, 30px);max-width:clamp(90px, 20vw, 118px);}
-    .header-brand-logo-img{width:auto;height:38px;max-height:45px;max-width:130px;object-fit:contain;}
   }
 
   @media (max-width:600px){
@@ -487,7 +483,4 @@
     .solutions-grid{grid-template-columns:1fr;}
     .method-step{flex:0 0 100%;}
     .transform-head{flex-direction:column;align-items:flex-start;}
-    .brand-logo-img,
-    .footer-brand-logo-img{height:clamp(20px, 5.2vw, 28px);max-width:clamp(88px, 30vw, 110px);}
-    .header-brand-logo-img{width:auto;height:34px;max-height:40px;max-width:120px;object-fit:contain;}
   }
